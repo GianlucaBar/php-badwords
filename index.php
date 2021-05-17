@@ -12,9 +12,11 @@
     $badword = $_GET["badword"];
     $paragrafo = 'Mi piace molto mangiare pane e salame.';
 
+    $length = strlen($paragrafo);
     $censored = str_replace($badword, "***", $paragrafo);
 ?>
 
+<?php echo $length ?>
 <p> <?php echo $censored ?> </p>
 
 </body>
